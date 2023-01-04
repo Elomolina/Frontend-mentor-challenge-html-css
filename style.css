@@ -1,0 +1,279 @@
+html,body
+{
+    height:100%;
+}
+body 
+{
+    margin:0;
+    padding:0;
+    background-color: hsl(30, 38%, 92%);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container 
+{
+    background-color: white;
+    width:40%;
+    height:70%;
+    border-radius: 10px;
+    display: flex;
+}
+.attribution 
+{
+    position:fixed; 
+    left:0px;
+    width:100%;
+    bottom:0px;
+    text-align: center;
+}
+.right-side 
+{
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+    display:flex;
+    flex-direction: column;
+    width:50%;
+}
+.left-side 
+{
+    width:50%;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+}
+p{
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    color:grey;
+    font-family: 'Montserrat', sans-serif;
+} 
+h1 
+{
+    font-size: 25px;
+    color:hsl(212, 21%, 14%);
+    margin:0;
+    font-family: 'Fraunces', serif;
+}
+h5
+{
+    margin:0;
+    margin-top:10%;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color:hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+.cart 
+{
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    height:10%;
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cart img 
+{
+    height:50%;
+ 
+}
+.cart h3
+{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    padding:0;
+    font-size:80%;
+}
+.price 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    margin:0;
+}
+.price h2 
+{
+    margin:0;
+    font-size: 25px;
+    color:hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+}
+.price h6 
+{
+    margin:0;
+    color:hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+@media (min-width:830px)and (max-width:870px)
+{
+    h5 {
+        font-size: 8px;
+    }
+    h1 
+    {
+        font-size: 15px;
+    }
+    .price h2 
+    {
+        font-size: 14px;
+    }
+    p 
+    {
+        font-size: 10px;
+    } 
+    .cart 
+    {
+        height:8%;
+    }
+}
+@media (min-width:870px) and (max-width:904px)
+{
+    h5 {
+        font-size: 10px;
+    }
+    h1 
+    {
+        font-size: 15px;
+    }
+    .price h2 
+    {
+        font-size: 15px;
+    }
+    p 
+    {
+        font-size: 10px;
+    }  
+}
+@media (min-width: 905px) and (max-width: 1054px)
+{
+    h5 {
+        font-size: 10px;
+    }
+    h1 
+    {
+        font-size: 20px;
+    }
+    .price h2 
+    {
+        font-size: 15px;
+    }
+    p 
+    {
+        font-size: 10px;
+    }
+}
+@media (min-width:710px)and (max-width:830px)
+{
+    h5 {
+        font-size: 7px;
+    }
+    h1 
+    {
+        font-size: 13px;
+    }
+    .price h2 
+    {
+        font-size: 14px;
+    }
+    p 
+    {
+        font-size: 10px;
+    } 
+    .cart 
+    {
+        height:8%;
+    }
+}
+@media(max-width:710px)
+{
+    h5 {
+        font-size: 7px;
+    }
+    h1 
+    {
+        font-size: 11px;
+    }
+    .price h2 
+    {
+        font-size: 12px;
+    }
+    p 
+    {
+        font-size: 10px;
+    } 
+    .cart 
+    {
+        height:7%;
+    }
+    .cart h3 
+    {
+        font-size: 10px;
+    }
+} 
+@media(max-width:640px)
+{
+    .container 
+    {
+        height:90%;
+        width:90%;
+        flex-direction: column;
+    }
+    .left-side 
+    {
+        width:100%;
+        height:40%;
+        background-image: url(./images/image-product-mobile.jpg);
+        background-size: cover;
+    }
+    .right-side
+    {
+        width:100%;
+        height:60%;
+    }
+    h5 
+    {
+        margin-top:10px;
+        font-size: 10px;
+    }
+    h1 
+    {
+        font-size:20px;
+    }
+    .cart 
+    {
+       height:40px;
+    }
+    p 
+    {
+        font-size: 12px;
+    }
+    .price h2 
+    {
+        font-size: 20px;
+    }
+}
+@media(max-width:406px)
+{
+    p 
+    {
+        font-size: 10px;
+    }
+    .cart 
+    {
+        height:30px;
+    }
+    .price h2 
+    {
+        font-size: 15px;
+    }
+    
+}
