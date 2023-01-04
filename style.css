@@ -223,7 +223,8 @@ h5
 {
     .container 
     {
-        height:90%;
+        border-radius: 30px;
+        height:650px;
         width:90%;
         flex-direction: column;
     }
@@ -257,7 +258,7 @@ h5
     }
     p 
     {
-        font-size: 16px;
+        font-size: 17px;
         line-height: 25px;
     }
     .price 
