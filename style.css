@@ -15,8 +15,8 @@ body
 .container 
 {
     background-color: white;
-    width:40%;
-    height:70%;
+    width:50%;
+    height:350px;
     border-radius: 10px;
     display: flex;
 }
@@ -44,15 +44,14 @@ body
     background-size: cover;
 }
 p{
-    line-height: 20px;
-    font-size: 13px;
-    font-weight: 600;
+    line-height: 25px;
+    font-size: 15px;
     color:grey;
     font-family: 'Montserrat', sans-serif;
 } 
 h1 
 {
-    font-size: 25px;
+    font-size: 20px;
     color:hsl(212, 21%, 14%);
     margin:0;
     font-family: 'Fraunces', serif;
@@ -71,7 +70,7 @@ h5
 {
     background-color: hsl(158, 36%, 37%);
     border-radius: 10px;
-    height:10%;
+    height:40px;
     display: flex;
     gap:10px;
     justify-content: center;
@@ -90,7 +89,7 @@ h5
     font-family: 'Montserrat', sans-serif;
     margin:0;
     padding:0;
-    font-size:80%;
+    font-size:20px;
 }
 .price 
 {
@@ -103,7 +102,7 @@ h5
 .price h2 
 {
     margin:0;
-    font-size: 25px;
+    font-size: 30px;
     color:hsl(158, 36%, 37%);
     font-family: 'Fraunces', serif;
 }
@@ -113,113 +112,8 @@ h5
     color:hsl(228, 12%, 48%);
     text-decoration: line-through;
 }
-/* @media (min-width:830px)and (max-width:870px)
-{
-    h5 {
-        font-size: 8px;
-    }
-    h1 
-    {
-        font-size: 15px;
-    }
-    .price h2 
-    {
-        font-size: 14px;
-    }
-    p 
-    {
-        font-size: 10px;
-    } 
-    .cart 
-    {
-        height:8%;
-    }
-}
-@media (min-width:870px) and (max-width:904px)
-{
-    h5 {
-        font-size: 10px;
-    }
-    h1 
-    {
-        font-size: 15px;
-    }
-    .price h2 
-    {
-        font-size: 15px;
-    }
-    p 
-    {
-        font-size: 10px;
-    }  
-}
-@media (min-width: 905px) and (max-width: 1054px)
-{
-    h5 {
-        font-size: 10px;
-    }
-    h1 
-    {
-        font-size: 20px;
-    }
-    .price h2 
-    {
-        font-size: 15px;
-    }
-    p 
-    {
-        font-size: 10px;
-    }
-}
-@media (min-width:710px)and (max-width:830px)
-{
-    h5 {
-        font-size: 7px;
-    }
-    h1 
-    {
-        font-size: 13px;
-    }
-    .price h2 
-    {
-        font-size: 14px;
-    }
-    p 
-    {
-        font-size: 10px;
-    } 
-    .cart 
-    {
-        height:8%;
-    }
-}
-@media(max-width:710px)
-{
-    h5 {
-        font-size: 7px;
-    }
-    h1 
-    {
-        font-size: 11px;
-    }
-    .price h2 
-    {
-        font-size: 12px;
-    }
-    p 
-    {
-        font-size: 10px;
-    } 
-    .cart 
-    {
-        height:7%;
-    }
-    .cart h3 
-    {
-        font-size: 10px;
-    }
-}  */
-@media(max-width:640px)
+/*especificaciones generales para mobile*/
+@media(max-width:900px)
 {
     .container 
     {
@@ -268,5 +162,134 @@ h5
     .price h2 
     {
         font-size: 30px;
+    }
+}
+/*telefonos pequeños*/
+@media(max-width:320px)
+{
+    .left-side
+    {
+        height:30%;
+    }
+    .container 
+    {
+        height:400px;
+    }
+    h5 
+    {
+        font-size: 12px;
+    }
+    h1 
+    {
+        font-size:22px;
+    }
+    p 
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .price h2 
+    {
+        font-size: 25px;
+    }
+    .cart 
+    {
+        position: relative;
+        bottom:10px;
+        left:20px;
+        width:80%;
+    }
+    
+}
+@media(min-width:321px) and (max-width:376px)
+{
+    .container
+    {
+        height:550px;
+    }
+    h1 
+    {
+        font-size: 25px;
+    }
+    p 
+    {
+        font-size: 15px;
+    }
+    .price h2 
+    {
+        font-size: 30px;
+    }
+    .cart 
+    {
+        font-size: 30px;
+        height: 35px;
+        position: relative;
+        bottom: 10px;
+    }
+    .cart img 
+    {
+        width:20px;
+        height: 20px;
+    }
+}
+/*tablets*/
+@media(min-width:700px)  and (max-width:800px)
+{
+    .container 
+    {
+        height:750px;
+    }
+    h5 
+    {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    h1 
+    {
+        font-size: 40px;
+    }
+    p 
+    {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .price h2 
+    {
+        font-size: 40px;
+    }
+    .cart 
+    {
+        height:60px;
+        font-size: 35px;
+    }
+    
+}
+@media(min-width:800px) and (max-width:1000px)
+{
+    .container
+    {
+        height: 850px ;
+    }
+    h1 
+    {
+        font-size: 50px;
+    }
+    p
+    {
+        font-size: 25px;
+        line-height: 33px;
+    }
+    .price h2 
+    {
+        font-size: 55px;
+    }
+    .price h6 
+    {
+        font-size:30px;
+    }
+    .cart 
+    {
+        height: 70px;
     }
 }
